@@ -1,0 +1,566 @@
+body{
+	margin:0px;
+}
+html{
+	scroll-behavior: smooth;
+}
+
+#body-header{
+	height: 70vh;
+	background-attachment: fixed;
+	max-width: 100%;
+	background-size: cover;
+	background-position: center;
+	background-image: url("../images/header.jpg");
+}
+
+/* Horizontal list */
+
+
+.horizontal-list{
+	list-style: none;
+	text-align: center;
+}
+.horizontal-list li{
+	display: inline-block;
+}
+
+/*Body header*/
+#header-nav li{
+	box-shadow: 0px 0px 15px 6px lightgrey;
+	border-radius: 4px;
+	background-color: white;
+	padding: .7rem;
+}
+
+#body-header li , .social li
+{
+	margin: 2% 3%;
+	color: white;
+
+	font-family: cursive;
+	transition: transform .3s;
+}
+
+#header-nav li:hover{
+	transform: translateY(-4px);
+	
+
+}
+#header-nav li a{
+	text-decoration: none;
+	color: black;
+	font-size: 1.4em;
+}
+
+#header-nav{
+	text-align: center;
+}
+
+/*Name heading*/
+#body-header h1{
+	font-size: 4em;
+	text-align: center;
+	color: white;
+	font-family: cursive;
+	margin-bottom: 1%;
+}
+
+
+
+
+/*Social tab*/
+
+
+
+
+.social li a{
+	text-decoration: none;
+	color: white;
+	border-radius: 50%;
+	font-size: 1.4em;
+}
+
+.social li {
+	padding: 1%;
+	transition: box-shadow .4s transform .4s;
+}
+
+.social li:hover{
+	
+	box-shadow: 0px 0px 6px 6px grey;
+	transform: translateY(-4px);
+}
+
+#about {
+	width: 100%;
+	height: auto;
+}
+#my-image {
+	height: 14rem;
+	width: 14rem;
+	margin: auto;
+	margin-top: -15vh;
+}
+
+#my-image img{
+	width: 100%;
+	height: 100%;
+	border-radius:  50%;
+	box-shadow: 0px 0px 6px 6px white;
+	transition: box-shadow .5s;
+}
+
+#my-image img:hover{
+
+	box-shadow: 0px 0px 10px 20px white;
+}
+
+#about-content{
+	padding: 1rem;
+	text-align: justify;
+	margin: auto;
+	width: 50%;
+	margin-top: 5vh;
+	font-size: 1.4em;
+	line-height: 1.6;
+	box-shadow: 0px 0px 15px 6px lightgrey;
+	border-radius: 4px;
+	transition: box-shadow .5s;
+	font-family: cursive;
+	color: black;
+}
+
+#about-content:hover{
+
+	box-shadow: 0px 0px 15px 12px lightgrey;
+
+}
+
+
+/*Section*/
+ main section {
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	align-content: center;
+	padding: 1%;
+	width: 100%;
+}
+
+
+/*section:nth-child(2n)
+{
+	background-color: lightgrey;
+}
+
+section:nth-child(2n+1)
+{
+	background-color: white;
+}*/
+
+/*Section Heading*/
+
+.section-heading{
+	text-align: center;
+	margin: 1%;
+	font-size: 2.5em;
+	margin-bottom: 75px;
+}
+
+.section-heading span{
+	 color: #313198;
+	 display: inline-block;
+	 font-weight: 400;
+}
+
+.section-skill{
+	width: 60%;
+	display: flex;
+	flex-direction: row;
+
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-content: space-content;
+	background-color: white;
+	font-family: cursive;
+
+}
+
+.skillprogress{
+	width: 200px;
+	background-color: #ebe9e9;
+	border-radius: 16px;
+	margin: 4%;
+	box-shadow: 4px 4px 6px 1px rgba(0,0,0,.4);
+
+}
+/*skill percentage*/
+.percentagecpp{
+	padding: .4rem;
+	color:white;
+	width: 80%;
+	background-color: orange;
+	border-radius: 16px 0px 0px 16px ;
+	transition: width .4s background-color .4s
+}
+
+.percentagec{
+	padding: .4rem;
+	color:white;
+	width: 85%;
+	background-color: green;
+	border-radius: 16px 0px 0px 16px ;
+}
+.percentagepy{
+	padding: .4rem;
+	color:white;
+	width: 40%;
+	background-color: #006bff;
+	border-radius: 16px 0px 0px 16px ;
+}
+.percentagehtml{
+	padding: .4rem;
+	color:white;
+	width: 75%;
+	background-image:linear-gradient( to right , purple,blue);
+	border-radius: 16px 0px 0px 16px ;
+}
+.percentagecss{
+	padding: .4rem;
+	color:white;
+	width: 60%;
+	background-color: #27c8e7;
+	border-radius: 16px 0px 0px 16px ;
+}
+.percentagealgo{
+	padding: .4rem;
+	color:white;
+	width: 50%;
+	background-color: yellow;
+	border-radius: 16px 0px 0px 16px ;
+}
+.percentageds{
+	padding: .4rem;
+	color:white;
+	width: 80%;
+	background-color: #1eee3d;
+    border-radius: 16px;;
+	border-radius: 16px 0px 0px 16px ;
+}
+.percentagejs{
+	padding: .4rem;
+	color:white;
+	width: 20%;
+	background-color: #ff0087;
+	border-radius: 16px 0px 0px 16px ;
+}
+
+.skill-name{
+	padding-left: 2%;
+}
+
+.skill-name span{
+	display: inline-block;
+		font-size: 1.1rem;
+}
+
+
+/*Section-work*/
+
+#section-work{
+	width: 75%;
+	position: relative;
+	height: auto;
+	
+}
+
+
+.section-exp{
+	color: white;
+}
+.timeline-box{
+	width: 30%;
+	height: auto;
+	background-color: white;
+	margin: 4%;
+	padding: 2%;
+	border-radius: .8em;
+	box-shadow: 0px 0px 15px 5px grey;
+	position: relative;
+	font-family: cursive;
+}
+
+.timeline-box:nth-child(2n){
+	position: relative;
+	left: 58%;
+}
+
+
+.timeline-box:nth-child(2n+1)::after
+{
+	content: "";
+	width: 1rem;
+	height: 1rem;
+	background-color: white;
+	box-shadow: 0px 0px 4px 4px black;
+	position: absolute;
+	border-radius: 50%;
+	top: 52%;
+    right: -38%;
+    z-index: 1;
+}
+
+.timeline-box:nth-child(2n+1) span{
+	color:red;
+
+}
+.timeline-box:nth-child(2n) span{
+	color:blue;
+
+}
+.timeline-box:nth-child(2n)::before
+{
+	content: "";
+	width: 1rem;
+	height: 1rem;
+	background-color: white;
+	box-shadow: 0px 0px 4px 4px black;
+	position: absolute;
+	border-radius: 50%;
+	top: 52%;
+    left: -37%;
+    z-index: 1;
+}
+
+
+.timeline-divider{
+	height: 75%;
+    border: 3px dashed grey;
+
+    position: absolute;
+    top: 12%;
+    width: 0;
+    left: 50%;
+}
+
+
+
+.timeline-plane{
+	position: sticky;
+	font-size: 2em;
+	right: 1px;
+	z-index: 2;
+	top: 65%;
+	transform: rotate(90deg);
+}
+
+.company-logo{
+	font-size: 2.5em;
+}
+
+.company-name {
+	position: relative;
+	display: inline-block;
+	text-align: right;
+	font-size: 250%;
+	padding: 1em;
+}
+
+
+.working-period{
+	text-align: right;
+	padding: 1%;
+}
+
+.work-description{
+	text-align: justify;
+	color: #ca8f25;
+}
+
+.designation{
+	text-align: right;
+	font-weight: bold;
+	padding: 1%;
+}
+
+/*Education section*/
+
+.fa-graduation-cap{
+	color: orange;
+}
+
+
+#section-education{
+	width: 80%;
+	height: auto;
+	position: relative;
+}
+
+#Experience .section-heading,#education .section-heading 
+{
+	width: 80%;
+	border-radius: 20px;
+	box-shadow: 5px 5px 5px 5px rgba(0,0,0,.2);
+}
+
+#section-education .timeline-plane{
+	transform: rotate(90deg);
+}
+
+.insti-logo ,.insti-name,.edu-period{
+
+	text-align: center;
+	font-size: 1.5em;
+}
+
+/*contact section*/
+
+.contact-section{
+background: rgb(17,1,20);
+background: linear-gradient(to right, rgba(17,1,20,1) 0%, rgba(84,5,89,1) 52%, rgba(38,50,242,1) 100%);
+width: 100%;
+box-sizing: border-box;
+height: 80vh;
+display: flex;
+flex-direction: column;
+flex-wrap:wrap;
+justify-content: space-between;
+}
+
+.timeline-box img{
+	margin: 5px;
+	margin-top: 4%;
+	object-fit: cover;
+	max-width: 100%;
+}
+
+.message-container{
+	color:white;
+	width: 40%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	padding: 1%;
+	margin: 1%;
+	box-sizing: border-box;
+	text-align: center;
+}
+
+
+input[type='text'] ,input[type='email'] , textarea 
+{
+	margin:1%;
+	padding: 2%;
+	width: 90%;
+	color: white;
+	font-family: cursive;
+	font-size: 1.2em;
+	border:none;
+	background-color: inherit;
+	outline:none;
+	border-bottom: 4px solid white;
+}
+
+
+input[type='submit']
+{
+	margin:1%;
+	padding: 2%;
+	box-shadow: 0px 0px 5px 5px white;
+	color: black;
+	font-family: cursive;
+	outline: none;
+	font-size: 1.2em;
+	border:none;
+}
+@media screen and (max-width: 1000px)
+{
+	#header-nav li {
+		margin: 0.4%  1.2%;
+	}
+
+	#body-header h1{
+		font-size: 2em;
+	}
+
+	#about #about-content{
+		width: 90%
+	}
+
+	#Experience .timeline-divider{
+		position: absolute;
+		left: 110%;
+	}
+
+	header#body-header{
+		height: 60vh;
+	}
+		
+
+	#Experience .timeline-box:nth-child(2n+1)::after{
+		right: -15%;
+	}
+	#Experience .timeline-box:nth-child(2n)::before{
+		left: 112%;
+
+	}
+
+	
+	#Experience .timeline-box{
+		width: 90%;
+		left: 0 !important;
+		top: 0;
+	}
+
+	#education .timeline-box div{
+		font-size: 100%;
+	}
+
+}
+
+#contact .section-heading
+{
+	width: 90%;
+	border-radius: 20px;
+	box-shadow: 5px 5px 5px 5px rgba(0,0,0,.2);
+}
+
+.content-container{
+	color: white;
+	padding: 2%;
+	margin:2%;
+	width: 50%;
+	box-sizing: border-box;
+}
+
+.content-container div p{
+	text-align: justify;
+}
+
+.content-container div,i{
+	margin:1%;
+	padding: 1%;
+
+}
+
+.contact-social li{
+	display: inline-block;
+	color: white;
+	list-style: none;
+	padding: 1%;
+	margin: 1%;
+}
+
+.contact-social li a {
+	text-decoration: none;
+	color: white;
+	display: inline-block;
+	font-size: 1.4em;
+	margin: 1%;
+	padding: 1%;
+
+}
